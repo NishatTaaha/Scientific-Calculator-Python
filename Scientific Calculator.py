@@ -275,7 +275,8 @@ btnLog=Button(calc, text='log', width=6, height=2, font=('arial',20,'bold'), bd=
               command= added_value.log).grid(row=3, column=4,pady=1)
 btnExp=Button(calc, text='exp', width=6, height=2, font=('arial',20,'bold'), bd=4, bg='darkgray',
               command=added_value.exp).grid(row=3, column=5,pady=1)
-btnMod=Button(calc, text='Mod', width=6, height=2, font=('arial',20,'bold'), bd=4, bg='darkgray').grid(row=3, column=6,pady=1)
+btnMod=Button(calc, text='Mod', width=6, height=2, font=('arial',20,'bold'), bd=4, bg='darkgray',
+              command= lambda: added_value.operation('add')).grid(row=3, column=6,pady=1)
 btnE=Button(calc, text='sin', width=6, height=2, font=('arial',20,'bold'), bd=4, bg='darkgray',
             command=added_value.e).grid(row=3, column=7,pady=1)
 
